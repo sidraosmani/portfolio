@@ -1,0 +1,75 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #004d57; /* Deep teal */
+}
+
+/* About Me */
+.about-me {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects */
+.projects {
+  padding: 2rem;
+  background-color: #004d57; /* Deep teal */
+  color: #fff;
+}
+
+.project-card {
+  background-color: #fff;
+  color: #004d57;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+.contact {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #e94e77; /* Burnt Orange */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Fade-in effect for sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply to all sections */
+.about-me, .projects, .contact {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Smooth transition for buttons */
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d85d5b; /* Slightly lighter burnt orange on hover */
+}
