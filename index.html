@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidra Osmani - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction Section -->
+  <section id="home">
+    <div class="intro-content">
+      <h1>Hello, I'm Sidra Osmani</h1>
+      <p>Welcome to my portfolio. I specialize in web development with a passion for front-end design. Explore my projects and feel free to reach out!</p>
+      <a href="#projects" class="btn-main">See My Projects</a>
+    </div>
+  </section>
+
+  <!-- My Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div id="project-list"></div> <!-- Dynamic content from JavaScript -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to collaborate? Reach out below!</p>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-main">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sidra Osmani. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
