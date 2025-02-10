@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; 
 import AboutMe from './components/AboutMe';
 import MyProjects from './components/MyProjects';
 import ContactForm from './components/ContactForm';
@@ -9,11 +9,11 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Routes> {/* Use Routes instead of Switch */}
-          <Route path="/about" element={<AboutMe />} /> {/* Use element instead of component */}
-          <Route path="/projects" element={<MyProjects />} /> {/* Use element instead of component */}
-          <Route path="/contact" element={<ContactForm />} /> {/* Use element instead of component */}
-          <Route path="/" exact element={<h1>Welcome to My Portfolio</h1>} /> {/* Use element instead of component */}
+        <Routes>
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<MyProjects />} />
+          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/" element={<h1>Welcome to My Portfolio</h1>} />
         </Routes>
       </div>
     </Router>
